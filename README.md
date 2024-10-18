@@ -39,7 +39,7 @@ The input should be a peptide/PSM quantitative report in .csv format and a prote
 - Heatmaps of protein expressions and peptide abundances.
 - VIQoR plot.
 
-More information about the functionality of the tool can be found in the [Manual](https://bitbucket.org/veitveit/viqor/raw/749e2ff8c2d9208fa16c90290c889d7903915600/Manual.pdf).
+More information about the functionality of the tool can be found in the [Manual](https://github.com/vtsiamis88/viqor/blob/main/www/Manual.pdf).
 
 
 ### Installation
@@ -67,7 +67,7 @@ You also need to have the Chrome browser installed on your system or any other b
 
 Load the app.R file in [Rstudio](http://rstudio.com) and run the shiny app.
 
-## Docker container
+### Docker container
 
 The latest version of VIQoR is available as docker container veitveit/viqor:latest
 
