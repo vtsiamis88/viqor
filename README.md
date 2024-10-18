@@ -39,10 +39,13 @@ The input should be a peptide/PSM quantitative report in .csv format and a prote
 - Heatmaps of protein expressions and peptide abundances.
 - VIQoR plot.
 
-More information about the functionality of the tool can be found in the [Manual](https://bitbucket.org/vtsiamis/viqor/raw/8b750742047db92a8954103b7b381043eea1ec9a/Manual.pdf).
+More information about the functionality of the tool can be found in the [Manual](https://bitbucket.org/veitveit/viqor/raw/749e2ff8c2d9208fa16c90290c889d7903915600/Manual.pdf).
 
 
 ### Installation
+
+VIQoR works only for R version 4 or higher.
+
 Download VIQoR's repository to your computer and install the following R packages:
 ```R
 install.packages(c("shiny", "shinydashboard", "DT", "protr", "shinyjs", "igraph", "networkD3", 
@@ -64,10 +67,20 @@ You also need to have the Chrome browser installed on your system or any other b
 
 Load the app.R file in [Rstudio](http://rstudio.com) and run the shiny app.
 
+## Docker container
+
+The latest version of VIQoR is available as docker container veitveit/viqor:latest
+
+Assuming that you have a working docker environment, run it via
+```
+docker run -it -p3838:3838 veitveit/viqor
+```
+and access the tool in your web browser via `localhost:3838` (the address might change when running docker in a virtual machine).
+
 
 ### Web-service
 
-You can access the online service by any web browser (preferably Chrome or Mozilla) [here](http://computproteomics.bmb.sdu.dk:8192/app_direct/VIQoR/).
+You can access the online service by any web browser (preferably Chrome or Mozilla) [here](https://computproteomics.bmb.sdu.dk/app_direct/VIQoR/).
 
 ### Contact
 For software issues and general questions, please submit an issue.
